@@ -83,10 +83,14 @@
                 <div style="font-size:1.5em;">
                 <p><span style="color: #e20019;"><strong>NOMBRE</strong></span>&nbsp;&nbsp;{{ $name }}</p>
                     <p><span style="color: #e20019;"><strong>CORREO ELECTRÓNICO</strong></span>&nbsp;&nbsp;{{ $email }}</p>
+                    <p><span style="color: #e20019;"><strong>TELÉFONO</strong></span>&nbsp;&nbsp;{{ $telefono }}</p>
+                    <p><span style="color: #e20019;"><strong>CALLE</strong></span>&nbsp;&nbsp;{{ $calle }}</p>
+                    <p><span style="color: #e20019;"><strong>NUM INTERIOR</strong></span>&nbsp;&nbsp;{{ $numerointerior }}</p>
+                    <p><span style="color: #e20019;"><strong>CÓDIGO POSTAL</strong></span>&nbsp;&nbsp;{{ $cp }}</p>
                     <p><span style="color: #e20019;"><strong>TOTAL A PAGAR</strong></span>&nbsp;&nbsp;${{ number_format($totalenviado,2)}}</p>
                     <form action="" method="POST">
                         <script
-                         src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js" data-button-label="Pagar la compra"
+                         src="http://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js" data-button-label="Pagar la compra"
                          data-preference-id="<?php echo $preference->id; ?>">
                         </script>
                     </form>
