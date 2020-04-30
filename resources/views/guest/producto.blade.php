@@ -8,7 +8,7 @@
 @section('content')
 
 
-<section class="course-title-area pt-120 pb-120 bg_cover" style="background-image: url({{ URL::asset('guest/img/background.jpg')}})">
+<section class="course-title-area pt-120 pb-120 bg_cover" style="background: url({{ URL::asset('guest/img/background.jpeg')}}) ">
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
@@ -37,8 +37,8 @@
                     </div>
                     <div class="course-info">
                         <ul>
-                            <li><i class="fa fa-user"></i> by Jose Portilla</li>
-                            <li><i class="fa fa-calendar-alt"></i> by Jose Portilla</li>
+                            <li><i class="fa fa-user"></i> by Pamela Hernández</li>
+                            <li><i class="fa fa-calendar-alt"></i> by Pamela Hernández</li>
                         </ul>
                     </div>
                 </div>

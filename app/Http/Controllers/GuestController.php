@@ -210,7 +210,10 @@ class GuestController extends Controller
         }
         return view('guest.checkout')->with('preference',$preference)
                                      ->with('name',$name)
-                                     ->with('email',$email)
+                                     ->with('telefono',$telefono)
+                                     ->with('calle',$calle)
+                                     ->with('numerointerior',$numerointerior)
+                                     ->with('cp',$cp)
                                      ->with('totalenviado',$total);
     }
 
