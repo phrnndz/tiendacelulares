@@ -38,7 +38,7 @@ class GuestController extends Controller
         $products = Product::where('status', 1)
                     ->take(8)
                     ->get();
-        return view('guest.index', compact('products','events'));
+        return view('guest.index', compact('products'));
     }
 
     public function categoria($categoria)
