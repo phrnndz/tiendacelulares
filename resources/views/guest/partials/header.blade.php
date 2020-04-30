@@ -7,11 +7,11 @@
     <title>Tienda e-commerce</title>
     <meta name="google-site-verification" content="google-site-verification=EX7n5OxfohS62_Zis9_YjpzxD_85LPIaOtOBFm3zm7A">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ URL::asset('guest/css/owl.carousel.css')}}">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="{{ URL::asset('guest/css/responsive.css')}}">
     <link rel="stylesheet" href="{{ URL::asset('guest/css/animate.css')}}">
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="http://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
  
 
     @yield('head')
