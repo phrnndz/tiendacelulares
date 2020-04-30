@@ -29,8 +29,8 @@ class GuestController extends Controller
     {
         // MercadoPago\SDK::setClientId(config('services.mercadopago.client_id'));
         // MercadoPago\SDK::setClientSecret(config('services.mercadopago.client_secret')); // On Sandbox
-        // MercadoPago\SDK::setAccessToken('APP_USR-6588866596068053-041607-428a530760073a99a1f2d19b0812a5b6-491494389'); //este es el del examen
-        MercadoPago\SDK::setAccessToken('TEST-2816301191036834-011423-ed87b9b8332afc2400e2b4c42e17dc2a-34105505'); //este es mio
+        MercadoPago\SDK::setAccessToken('APP_USR-6588866596068053-041607-428a530760073a99a1f2d19b0812a5b6-491494389'); //este es el del examen
+        // MercadoPago\SDK::setAccessToken('TEST-2816301191036834-011423-ed87b9b8332afc2400e2b4c42e17dc2a-34105505'); //este es mio
     }
 
     public function index()
