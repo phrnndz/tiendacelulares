@@ -253,16 +253,12 @@ class GuestController extends Controller
             'items'                 => $items
         );
 
-        $to_email = $paymentUpdate->email;
-        Mail::send('guest.email.success', $data, function($message) use ($to_email) {
-            $message->to($to_email);
-            $message->subject('Confirmación de tu compra en Formación Politica');
-            $message->from('formacionycomunicacionpolitica@gmail.com', 'Formación Política');
-        });
-
         session()->forget('cart');
         return view('guest._checkout.success')
                 ->with('codigo', $paymentUpdate->codigo)
+                ->with('payment_type', $paymentUpdate->payment_type)
+                ->with('preference_id', $paymentUpdate->preference_id)
+                ->with('merchant_order_id', $paymentUpdate->merchant_order_id)
                 ->with('amount', $paymentUpdate->amount)
                 ->with('name',   $paymentUpdate->name);
 

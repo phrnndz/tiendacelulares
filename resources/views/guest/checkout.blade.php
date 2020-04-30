@@ -89,7 +89,7 @@
                     <p><span style="color: #e20019;"><strong>CÓDIGO POSTAL</strong></span>&nbsp;&nbsp;{{ $cp }}</p>
                     <p><span style="color: #e20019;"><strong>TOTAL A PAGAR</strong></span>&nbsp;&nbsp;${{ number_format($totalenviado,2)}}</p>
 
-                    <a href="<?php echo $preference->init_point; ?>">Pagar la compra</a>
+                    <a  class="btn btn-lg btn-block text-center" href="<?php echo $preference->init_point; ?>">Pagar la compra</a>
 
 
                 </div>

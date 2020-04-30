@@ -62,13 +62,21 @@
                                     En tu estado de cuenta verás el cargo como "MERCADOPAGO"</p>
                                 <p>Estamos preparando todo para enviarte tus artículos</p>
                                 <p>Te recomendamos guardar este <a href="{{ url('generatepdf') }}/{{$codigo}}" target="_blank">PDF</a> para cualquier aclaración <strong></strong></p>
-                                
 
-                                {{-- <ul>
-                                    @foreach ($payment[0]->items as $item)
-                                        <li>{{$item->title}}</li>
-                                    @endforeach
-                                </ul> --}}
+                                <br>
+                                <br>
+                                <br>
+                                <p><strong>codigo:  </strong>{{$codigo }} </p>
+                                <p><strong>preference_id:  </strong>{{$preference_id }} </p>
+                                <p><strong>payment_type:  </strong>{{$payment_type }} </p>
+                                <p><strong>merchant_order_id:  </strong>{{$merchant_order_id }} </p>
+                                <p><strong>amount:  </strong>{{$amount }} </p>
+                                <p><strong>name:  </strong>{{$name }} </p>
+
+                                <br>
+                                <br>
+                                <br>
+                                
                             </div> 
                         </div>
 

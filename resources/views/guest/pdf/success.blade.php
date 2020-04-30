@@ -113,7 +113,7 @@
                     <table>
                         <tr>
                             <td class="">
-                                <img src="https://formacionpolitica.org/img/logo.png">
+                               
                             </td>
                             <td style="width:450px">
                                 Código de  Pago: {{ $reference }} <br>
@@ -129,8 +129,9 @@
                     <table>
                         <tr>
                             <td>
-                                Mirta Denis Cruz Morales<br>
-                                Hornos 25, Santa Cruz Xococotlán
+                                Tienda e-commerce<br>
+                                Oaxaca, Mexico
+                                CP 68000
                             </td>
                             
                             <td>
@@ -227,7 +228,7 @@
                 </td>
             </tr>
         </table>
-        <p class="footer" >Agradecemos su compra, para cualquier aclaración no dude en contactar con nosotros al 9511583133 o escríbenos a formacionycomunicacionpolitica@gmail.com . Todos los pagos son realizados en pesos mexicanos. </p>
+        <p class="footer" >Agradecemos su compra, para cualquier aclaración no dude en contactar con nosotros. Todos los pagos son realizados en pesos mexicanos. </p>
     </div>
 </body>
 </html>
