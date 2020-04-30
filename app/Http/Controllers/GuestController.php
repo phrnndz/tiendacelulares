@@ -139,7 +139,7 @@ class GuestController extends Controller
             $item = new MercadoPago\Item();
             $item->id = 1234;
             $item->title = $article['name'];
-            $item->picture_url =  "https://www.mercadopago.com/org-img/MP3/home/logomp3.gif";
+            $item->picture_url =  "http://tiendacelulares.herokuapp.com/img/1588210603.jpg";
             $item->quantity = $article['quantity'];
             $item->description = "Dispositivo móvil de Tienda e-commerce";
             $item->unit_price = $article['price'];
@@ -164,12 +164,12 @@ class GuestController extends Controller
 
 
         $preference->back_urls = array(
-            "success" => "http://tiendacelulares.test/checkout/success",
-            "failure" => "http://tiendacelulares.test/checkout/failure",
-            "pending" => "http://tiendacelulares.test/checkout/pending"
+            "success" => "http://tiendacelulares.herokuapp.com/checkout/success",
+            "failure" => "http://tiendacelulares.herokuapp.com/checkout/failure",
+            "pending" => "http://tiendacelulares.herokuapp.com/checkout/pending"
         );
 
-        $preference->notification_url="https://tiendacelulares.com/checkout/notifications";
+        $preference->notification_url="http://tiendacelulares.herokuapp.com/checkout/notifications";
         $preference->auto_return = "all";
         $preference->external_reference=  $codigoventa;
         $preference->payment_methods = array(
@@ -190,7 +190,7 @@ class GuestController extends Controller
         );
         
         $preference->save();
-        dd($preference);
+        // dd($preference);
        // se guarda el pago en espera que cambie el estatus
         $payment = new Payment;
         $payment->codigo =  $codigoventa;
@@ -202,8 +202,8 @@ class GuestController extends Controller
         foreach($cart as $article){
             $order = new Order;
             $order->payment_codigo  = $codigoventa;
-            // $order->product_id      = $article['id'];
-            $order->product_id      = 1234;
+            $order->product_id      = $article['id'];
+            // $order->product_id      = 1234;
             $order->quantity        = $article['quantity'];
             $order->price           = $article['price'];
             $order->save();
