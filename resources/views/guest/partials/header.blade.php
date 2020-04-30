@@ -85,9 +85,9 @@
                             {{-- <li class="{{ request()->is('categoria/curso') ? 'active' : '' }}"><a href="{{ url('categoria/curso') }}">Cursos</a></li>
                             <li class="{{ request()->is('categoria/taller') ? 'active' : '' }}"><a href="{{ url('categoria/taller') }}">Talleres</a></li>
                             <li class="{{ request()->is('categoria/diplomado') ? 'active' : '' }}"><a href="{{ url('categoria/diplomado') }}">Diplomados</a></li>
-                            <li class="{{ request()->is('tienda') ? 'active' : '' }}"><a href="{{ url('/tienda') }}">Tienda</a></li>
-                            <li class="{{ request()->is('contacto') ? 'active' : '' }}""><a href="{{ url('/contacto') }}">Contacto</a></li>
-                        </ul> --}}
+                            <li class="{{ request()->is('tienda') ? 'active' : '' }}"><a href="{{ url('/tienda') }}">Tienda</a></li> --}}
+                            <li class="{{ request()->is('contacto') ? 'active' : '' }}""><a target="_blank" href="https://github.com/phrnndz/tiendacelulares">Github</a></li>
+                        </ul>
                     </div>  
                 </div>
             </div>
