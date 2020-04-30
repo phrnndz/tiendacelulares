@@ -88,12 +88,8 @@
                     <p><span style="color: #e20019;"><strong>NUM INTERIOR</strong></span>&nbsp;&nbsp;{{ $numerointerior }}</p>
                     <p><span style="color: #e20019;"><strong>CÓDIGO POSTAL</strong></span>&nbsp;&nbsp;{{ $cp }}</p>
                     <p><span style="color: #e20019;"><strong>TOTAL A PAGAR</strong></span>&nbsp;&nbsp;${{ number_format($totalenviado,2)}}</p>
-                    <form action="" method="POST">
-                        <script
-                         src="http://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js" data-button-label="Pagar la compra"
-                         data-preference-id="<?php echo $preference->id; ?>">
-                        </script>
-                    </form>
+
+                    <a href="<?php echo $preference->init_point; ?>">Pagar la compra</a>
 
 
                 </div>
