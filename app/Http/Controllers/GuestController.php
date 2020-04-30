@@ -176,12 +176,12 @@ class GuestController extends Controller
             "excluded_payment_methods" => array(
                 array(
 
-                    "id" => "atm",
+                    "id" => "amex",
                 )
             ),
             "excluded_payment_types" => array(
                 array(
-                    "id" => "amex",
+                    "id" => "atm",
 
                 )
             ),
