@@ -58,14 +58,6 @@
                         <div class="result-payment text-center">
                             <div class="result-payment-success text">
                             <p class="title-result-payment">CÓDIGO {{$codigo }} - Compra Exitosa</p>
-                                <p>¡Listo! , Se acreditó tu pago por {{ $amount }} MXN. 
-                                    En tu estado de cuenta verás el cargo como "MERCADOPAGO"</p>
-                                <p>Estamos preparando todo para enviarte tus artículos</p>
-                                <p>Te recomendamos guardar este <a href="{{ url('generatepdf') }}/{{$codigo}}" target="_blank">PDF</a> para cualquier aclaración <strong></strong></p>
-
-                                <br>
-                                <br>
-                                <br>
                                 <p><strong>codigo:  </strong>{{$codigo }} </p>
                                 <p><strong>preference_id:  </strong>{{$preference_id }} </p>
                                 <p><strong>payment_type:  </strong>{{$payment_type }} </p>
@@ -75,6 +67,10 @@
 
                                 <br>
                                 <br>
+                                <p>¡Listo! , Se acreditó tu pago por {{ $amount }} MXN. 
+                                    En tu estado de cuenta verás el cargo como "MERCADOPAGO"</p>
+                                <p>Estamos preparando todo para enviarte tus artículos</p>
+                                <p>Te recomendamos guardar este <a href="{{ url('generatepdf') }}/{{$codigo}}" target="_blank">PDF</a> para cualquier aclaración <strong></strong></p>
                                 <br>
                                 
                             </div> 

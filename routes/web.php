@@ -105,4 +105,4 @@ Route::post('checkout/notifications', 'GuestController@notifications');
 Route::get('generatepdf/{reference}', 'GuestController@generatepdf');
 
 
-
+// Route::post('redirect_mp', 'GuestController@redirect_mp')->name('redirect_mp');

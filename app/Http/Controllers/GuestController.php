@@ -222,7 +222,6 @@ class GuestController extends Controller
 
 
     public function success(Request $request){
-      
         $paymentUpdate = Payment::find($request->external_reference);
         $paymentUpdate->estatus               = $request->collection_status;
         $paymentUpdate->collection_id         = $request->collection_id;
@@ -493,5 +492,57 @@ class GuestController extends Controller
 
 
 
+    // public function redirect_mp(Request $request){
+        //ACASO M DEVUELVE COSAS DIFERENTES CUANDO ES MODAL Y EXTERNO ??????
+        // dd($request);
+    //     [
+    //    'estatus'               => $request->collection_status,
+    //    'collection_id'         => $request->collection_id,
+    //    'collection_status'     => $request->collection_status,
+    //    'payment_type'          => $request->payment_type,
+    //    'merchant_order_id'     => $request->merchant_order_id,
+    //    'preference_id'         => $request->preference_id
+    //    ]
+    // dd($request);
+    //     switch($request->payment_status){
+    //         case 'pending':
+    //             return redirect()->action("GuestController@pending", [
+    //                 'estatus'               => $request->collection_status,
+    //                 'collection_id'         => $request->collection_id,
+    //                 'collection_status'     => $request->collection_status,
+    //                 'payment_type'          => $request->payment_type,
+    //                 'merchant_order_id'     => $request->merchant_order_id,
+    //                 'preference_id'         => $request->preference_id,
+    //                 'external_reference'    => $request->external_reference
+    //                 ]);
+    //             break;
+    //         case 'approved':
+    //             return redirect()->action("GuestController@success", [
+    //                 'estatus'               => $request->collection_status,
+    //                 'collection_id'         => $request->collection_id,
+    //                 'collection_status'     => $request->collection_status,
+    //                 'payment_type'          => $request->payment_type,
+    //                 'merchant_order_id'     => $request->merchant_order_id,
+    //                 'preference_id'         => $request->preference_id,
+    //                 'external_reference'    => $request->external_reference
+
+    //                 ]);
+    //             break;
+    //         case 'failure':
+    //             return redirect()->action("GuestController@failure", [
+    //                 'estatus'               => $request->collection_status,
+    //                 'collection_id'         => $request->collection_id,
+    //                 'collection_status'     => $request->collection_status,
+    //                 'payment_type'          => $request->payment_type,
+    //                 'merchant_order_id'     => $request->merchant_order_id,
+    //                 'preference_id'         => $request->preference_id,
+    //                 'external_reference'    => $request->external_reference
+
+    //                 ]);
+    //             break;
+
+
+    //     }
+    // }
 
 }

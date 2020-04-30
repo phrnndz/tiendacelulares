@@ -88,9 +88,9 @@
                     <p><span style="color: #e20019;"><strong>NUM INTERIOR</strong></span>&nbsp;&nbsp;{{ $numerointerior }}</p>
                     <p><span style="color: #e20019;"><strong>CÓDIGO POSTAL</strong></span>&nbsp;&nbsp;{{ $cp }}</p>
                     <p><span style="color: #e20019;"><strong>TOTAL A PAGAR</strong></span>&nbsp;&nbsp;${{ number_format($totalenviado,2)}}</p>
+                    <a class="btn btn-dark mt-5 btn-block"   href="<?php echo $preference->init_point; ?>">Pagar la compra</a>
 
-                    <a  class="btn btn-lg btn-block text-center" href="<?php echo $preference->init_point; ?>">Pagar la compra</a>
-
+                      
 
                 </div>
                 <div class="mercado-pago-banner">
