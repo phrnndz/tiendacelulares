@@ -170,7 +170,7 @@ class GuestController extends Controller
         );
 
         $preference->notification_url="http://tiendacelulares.herokuapp.com/checkout/notifications";
-        $preference->auto_return = "all";
+        $preference->auto_return = "approved";
         $preference->external_reference=  $codigoventa;
         $preference->payment_methods = array(
             "excluded_payment_methods" => array(
@@ -403,13 +403,21 @@ class GuestController extends Controller
 
     // Con este metodo se obtiene un codigo de venta, codicionado a repetirse si el codigo ya existe.
     public function codigoventa(){
-        // $id= 'ABCD1234';
-        $id = strtoupper(str_random(6));
-        $validator = Validator::make(['codigo'=>$id],['codigo'=>'unique:payments,codigo']);
-        if($validator->fails()){
-             return $this->codigoventa();
+        //LA PRIMERA VEZ QUE SE HAGA ESTO DEBE IMPRIMIR ESTE CODIGO ABCD1234 , DSPS SERÁ UN RANDOM
+        $id= 'ABCD1234';
+        // $existeId = Payment::find($id);
+        if (Payment::where('codigo', '=', $id)->exists()) {
+            $id = strtoupper(str_random(6));
+            $validator = Validator::make(['codigo'=>$id],['codigo'=>'unique:payments,codigo']);
+            if($validator->fails()){
+                 return $this->codigoventa();
+            }
+            return $id;
+        }else{
+            return $id;
         }
-        return $id;
+       
+        
    }
 
 
