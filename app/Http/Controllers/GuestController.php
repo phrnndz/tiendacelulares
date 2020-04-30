@@ -305,12 +305,7 @@ class GuestController extends Controller
             'items'                 => $items
         );
 
-        $to_email = $paymentUpdate->email;
-        Mail::send('guest.email.pending', $data, function($message) use ($to_email) {
-            $message->to($to_email);
-            $message->subject('Pendiente de pago en Formación Politica');
-            $message->from('formacionycomunicacionpolitica@gmail.com', 'Formación Política');
-        });
+
 
         session()->forget('cart');
         return view('guest._checkout.pending')
